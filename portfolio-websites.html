@@ -10,11 +10,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #240046;">
-            <div class="container-fluid px-4">
-                <a class="navbar-brand" href="index.html">VirallinKonten</a>
+    <!-- Modern Header -->
+    <header class="modern-header portfolio-header">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <span class="brand-name">VirallinKonten</span>
+                    <span class="brand-tagline">Digital Content Agency</span>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -32,255 +36,388 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html#contact"><i class="fas fa-envelope"></i> Contact</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="https://wa.me/6283831031417" class="btn btn-contact ms-lg-3">
+                                <i class="fab fa-whatsapp me-2"></i>Hubungi Kami
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
         
-        <!-- Hero Section -->
-        <section class="hero" style="background-image: linear-gradient(rgba(60, 9, 108, 0.8), rgba(36, 0, 70, 0.9)), url('images/header2.jpg');">
+        <!-- Hero Section Modern -->
+        <div class="hero-portfolio-modern">
+            <div class="hero-bg-particles"></div>
             <div class="container">
-                <h1>Portfolio Kami</h1>
-                <p>Kumpulan proyek website, strategi konten, dan promosi produk katalog yang telah kami kembangkan</p>
+                <div class="row align-items-center">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <div class="hero-content-modern">
+                            <span class="hero-badge-modern">PORTFOLIO</span>
+                            <h1 class="hero-title-modern">
+                                Karya <span class="gradient-text-modern">Terbaik</span> Kami
+                            </h1>
+                            <p class="hero-description-modern">
+                                Kumpulan proyek website, strategi konten, dan promosi produk katalog yang telah kami kembangkan dengan profesionalisme tinggi
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+            </div>
     </header>
 
     <!-- Main Content -->
     <main>
-        <!-- Portfolio Section -->
-        <section class="section">
+        <!-- Portfolio Section Modern -->
+        <section class="section portfolio-section">
             <div class="container">
                 <div class="section-title text-center">
-                    <h2>Karya Terbaik Kami</h2>
+                    <span class="section-badge">PROJECTS</span>
+                    <h2>Portofolio Unggulan</h2>
                     <p class="section-subtitle">Hasil karya tim profesional kami dalam berbagai bidang</p>
                 </div>
                 
-                <div class="portfolio-filters text-center mb-5">
-                    <button class="btn btn-outline-custom active" data-filter="all">Semua</button>
-                    <button class="btn btn-outline-custom" data-filter="Website">Website</button>
-                    <button class="btn btn-outline-custom" data-filter="content">Strategi Konten</button>
-                    <button class="btn btn-outline-custom" data-filter="catalog">Promosi Katalog</button>
+                <div class="portfolio-categories-tabs">
+                    <ul class="nav nav-pills justify-content-center mb-5" id="portfolioTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all" type="button" role="tab">
+                                Semua Proyek
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="website-tab" data-bs-toggle="pill" data-bs-target="#website" type="button" role="tab">
+                                Website
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="content-tab" data-bs-toggle="pill" data-bs-target="#content" type="button" role="tab">
+                                Strategi Konten
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="catalog-tab" data-bs-toggle="pill" data-bs-target="#catalog" type="button" role="tab">
+                                Promosi Katalog
+                            </button>
+                        </li>
+                    </ul>
                 </div>
                 
-                <div class="row portfolio-items">
-                    <!-- Item 1 -->
-                    <div class="col-md-4 mb-4 portfolio-item" data-category="corporate">
-                        <div class="card h-100 shadow-sm">
-                            <img src="images/web1.png" alt="Honda Dealer Garut" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Honda Dealer Garut</h5>
-                                <p class="card-text">
-                                    Website resmi dealer mobil Honda di Garut dengan tampilan modern. 
-                                    Menyediakan informasi produk, simulasi kredit, dan form pemesanan online.
-                                </p>
-                                <p>
-                                    <span class="badge bg-danger">HTML</span>
-                                    <span class="badge bg-warning text-dark">CSS</span>
-                                    <span class="badge bg-dark">JavaScript</span>
-                                    <span class="badge bg-success">Responsive Design</span>
-                                    <span class="badge bg-primary">Modern UI</span>
-                                </p>
-                                <a href="https://hondadealergarut.com/" class="btn btn-custom w-100">Lihat Detail</a>
+                <div class="tab-content" id="portfolioTabContent">
+                    <div class="tab-pane fade show active" id="all" role="tabpanel">
+                        <div class="row g-4">
+                            <!-- Project 1 -->
+                            <div class="col-md-4">
+                                <div class="portfolio-card">
+                                    <div class="portfolio-image">
+                                        <img src="images/web1.png" alt="Honda Dealer Garut" class="img-fluid">
+                                        <div class="portfolio-overlay">
+                                            <a href="https://hondadealergarut.com/" target="_blank" class="btn-view-project">Lihat Project</a>
+                                        </div>
+                                        <div class="portfolio-category">Website</div>
+                                    </div>
+                                    <div class="portfolio-content">
+                                        <h3>Honda Dealer Garut</h3>
+                                        <p>Website resmi dealer mobil Honda di Garut dengan tampilan modern. Menyediakan informasi produk, simulasi kredit, dan form pemesanan online.</p>
+                                        <div class="portfolio-tags">
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                            <span>Responsive</span>
+                                        </div>
                             </div>
                         </div>
                     </div>
                     
-                    
-                    <!-- Item 2 -->
-                    <div class="col-md-4 mb-4 portfolio-item" data-category="ecommerce">
-                        <div class="card h-100 shadow-sm">
-                            <img src="images/web3.jpg" alt="PyroShop UMKM" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">PyroShop</h5>
-                                <p class="card-text">
-                                    Landing page modern untuk UMKM PyroShop. Menampilkan katalog produk, informasi bisnis, dan tombol call-to-action untuk pembelian cepat.
-                                </p>
-                                <p>
-                                    <span class="badge bg-danger">HTML</span>
-                                    <span class="badge bg-warning text-dark">CSS</span>
-                                    <span class="badge bg-dark">JavaScript</span>
-                                    <span class="badge bg-success">Responsive Design</span>
-                                    <span class="badge bg-primary">Modern UI</span>
-                                </p>
-                                <a href="#" class="btn btn-custom w-100">Lihat Detail</a>
+                            <!-- Project 2 -->
+                            <div class="col-md-4">
+                                <div class="portfolio-card">
+                                    <div class="portfolio-image">
+                                        <img src="images/web3.jpg" alt="PyroShop UMKM" class="img-fluid">
+                                        <div class="portfolio-overlay">
+                                            <a href="#" class="btn-view-project">Lihat Project</a>
+                                        </div>
+                                        <div class="portfolio-category">Website</div>
+                                    </div>
+                                    <div class="portfolio-content">
+                                        <h3>PyroShop</h3>
+                                        <p>Landing page modern untuk UMKM PyroShop. Menampilkan katalog produk, informasi bisnis, dan tombol call-to-action untuk pembelian cepat.</p>
+                                        <div class="portfolio-tags">
+                                            <span>HTML</span>
+                                            <span>CSS</span>
+                                            <span>JavaScript</span>
+                                            <span>Responsive</span>
+                                        </div>
                             </div>
                         </div>
                     </div>
                     
-                    
-                    <!-- Item 3 -->
-                    <div class="col-md-4 mb-4 portfolio-item" data-category="landing">
-                        <div class="card h-100">
-                            <img src="images/header.jpg" alt="SuperApp Launch" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">SuperApp Launch</h5>
-                                <p class="card-text">Landing page untuk peluncuran aplikasi dengan fitur pendaftaran early access dan countdown timer.</p>
-                                <p><span class="badge bg-primary">HTML/CSS/JS</span> <span class="badge bg-success">High-Converting</span> <span class="badge bg-info">Fast Loading</span></p>
-                                <a href="#" class="btn btn-custom w-100">Lihat Detail</a>
+                            <!-- Project 3 -->
+                            <div class="col-md-4">
+                                <div class="portfolio-card">
+                                    <div class="portfolio-image">
+                                        <img src="images/header.jpg" alt="SuperApp Launch" class="img-fluid">
+                                        <div class="portfolio-overlay">
+                                            <a href="#" class="btn-view-project">Lihat Project</a>
+                                        </div>
+                                        <div class="portfolio-category">Website</div>
+                                    </div>
+                                    <div class="portfolio-content">
+                                        <h3>SuperApp Launch</h3>
+                                        <p>Landing page untuk peluncuran aplikasi dengan fitur pendaftaran early access dan countdown timer.</p>
+                                        <div class="portfolio-tags">
+                                            <span>HTML/CSS/JS</span>
+                                            <span>High-Converting</span>
+                                            <span>Fast Loading</span>
+                                        </div>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Item 4 -->
-                    <div class="col-md-4 mb-4 portfolio-item" data-category="portfolio">
-                        <div class="card h-100">
-                            <img src="images/header2.jpg" alt="Creative Studio" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Creative Studio</h5>
-                                <p class="card-text">Website portfolio untuk studio desain dengan galeri interaktif dan sistem booking konsultasi.</p>
-                                <p><span class="badge bg-primary">React.js</span> <span class="badge bg-success">Animasi Modern</span> <span class="badge bg-info">UI/UX Premium</span></p>
-                                <a href="#" class="btn btn-custom w-100">Lihat Detail</a>
+                            <!-- Project 4 -->
+                            <div class="col-md-4">
+                                <div class="portfolio-card">
+                                    <div class="portfolio-image">
+                                        <img src="images/header2.jpg" alt="Creative Studio" class="img-fluid">
+                                        <div class="portfolio-overlay">
+                                            <a href="#" class="btn-view-project">Lihat Project</a>
+                                        </div>
+                                        <div class="portfolio-category">Website</div>
+                                    </div>
+                                    <div class="portfolio-content">
+                                        <h3>Creative Studio</h3>
+                                        <p>Website portfolio untuk studio desain dengan galeri interaktif dan sistem booking konsultasi.</p>
+                                        <div class="portfolio-tags">
+                                            <span>React.js</span>
+                                            <span>Animasi Modern</span>
+                                            <span>UI/UX Premium</span>
+                                        </div>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Item 5 -->
-                    <div class="col-md-4 mb-4 portfolio-item" data-category="content">
-                        <div class="card h-100">
-                            <img src="images/header.jpg" alt="Strategi Konten Baju" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Fashion Bloom Campaign</h5>
-                                <p class="card-text">Strategi konten untuk brand fashion lokal dengan peningkatan engagement 250% dalam 3 bulan.</p>
-                                <p><span class="badge bg-primary">Content Strategy</span> <span class="badge bg-success">Social Media</span> <span class="badge bg-info">Analytics</span></p>
-                                <a href="#" class="btn btn-custom w-100">Lihat Detail</a>
+                            <!-- Project 5 -->
+                            <div class="col-md-4">
+                                <div class="portfolio-card">
+                                    <div class="portfolio-image">
+                                        <img src="images/header.jpg" alt="Fashion Bloom Campaign" class="img-fluid">
+                                        <div class="portfolio-overlay">
+                                            <a href="#" class="btn-view-project">Lihat Project</a>
+                                        </div>
+                                        <div class="portfolio-category">Strategi Konten</div>
+                                    </div>
+                                    <div class="portfolio-content">
+                                        <h3>Fashion Bloom Campaign</h3>
+                                        <p>Strategi konten untuk brand fashion lokal dengan peningkatan engagement 250% dalam 3 bulan.</p>
+                                        <div class="portfolio-tags">
+                                            <span>Content Strategy</span>
+                                            <span>Social Media</span>
+                                            <span>Analytics</span>
+                                        </div>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Item 6 -->
-                    <div class="col-md-4 mb-4 portfolio-item" data-category="catalog">
-                        <div class="card h-100">
-                            <img src="images/header2.jpg" alt="Katalog Produk" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">HomeStyle Catalog</h5>
-                                <p class="card-text">Katalog produk furniture dengan desain premium dan strategi promosi yang meningkatkan penjualan 180%.</p>
-                                <p><span class="badge bg-primary">Design</span> <span class="badge bg-success">Branding</span> <span class="badge bg-info">Marketing</span></p>
-                                <a href="#" class="btn btn-custom w-100">Lihat Detail</a>
+                            <!-- Project 6 -->
+                            <div class="col-md-4">
+                                <div class="portfolio-card">
+                                    <div class="portfolio-image">
+                                        <img src="images/header2.jpg" alt="HomeStyle Catalog" class="img-fluid">
+                                        <div class="portfolio-overlay">
+                                            <a href="#" class="btn-view-project">Lihat Project</a>
+                                        </div>
+                                        <div class="portfolio-category">Promosi Katalog</div>
+                                    </div>
+                                    <div class="portfolio-content">
+                                        <h3>HomeStyle Catalog</h3>
+                                        <p>Katalog produk furniture dengan desain premium dan strategi promosi yang meningkatkan penjualan 180%.</p>
+                                        <div class="portfolio-tags">
+                                            <span>Design</span>
+                                            <span>Branding</span>
+                                            <span>Marketing</span>
+                                        </div>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Item 7 -->
-                    <div class="col-md-4 mb-4 portfolio-item" data-category="content">
-                        <div class="card h-100">
-                            <img src="images/header.jpg" alt="Content Marketing" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">FoodBites Blog</h5>
-                                <p class="card-text">Strategi konten kuliner untuk restoran dengan peningkatan traffic website 320% dan reservasi online 150%.</p>
-                                <p><span class="badge bg-primary">Blog</span> <span class="badge bg-success">SEO</span> <span class="badge bg-info">Content Plan</span></p>
-                                <a href="#" class="btn btn-custom w-100">Lihat Detail</a>
+                            <!-- Project 7 -->
+                            <div class="col-md-4">
+                                <div class="portfolio-card">
+                                    <div class="portfolio-image">
+                                        <img src="images/header.jpg" alt="FoodBites Blog" class="img-fluid">
+                                        <div class="portfolio-overlay">
+                                            <a href="#" class="btn-view-project">Lihat Project</a>
+                                        </div>
+                                        <div class="portfolio-category">Strategi Konten</div>
+                                    </div>
+                                    <div class="portfolio-content">
+                                        <h3>FoodBites Blog</h3>
+                                        <p>Strategi konten kuliner untuk restoran dengan peningkatan traffic website 320% dan reservasi online 150%.</p>
+                                        <div class="portfolio-tags">
+                                            <span>Blog</span>
+                                            <span>SEO</span>
+                                            <span>Content Plan</span>
+                                        </div>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Item 8 -->
-                    <div class="col-md-4 mb-4 portfolio-item" data-category="catalog">
-                        <div class="card h-100">
-                            <img src="images/header2.jpg" alt="Seasonal Catalog" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">Summer Collection</h5>
-                                <p class="card-text">Katalog musiman untuk brand fashion dengan konsep visual yang unik dan strategi promosi multi-channel.</p>
-                                <p><span class="badge bg-primary">Print Design</span> <span class="badge bg-success">Digital Catalog</span> <span class="badge bg-info">Campaign</span></p>
-                                <a href="#" class="btn btn-custom w-100">Lihat Detail</a>
+                            <!-- Project 8 -->
+                            <div class="col-md-4">
+                                <div class="portfolio-card">
+                                    <div class="portfolio-image">
+                                        <img src="images/header2.jpg" alt="Summer Collection" class="img-fluid">
+                                        <div class="portfolio-overlay">
+                                            <a href="#" class="btn-view-project">Lihat Project</a>
+                                        </div>
+                                        <div class="portfolio-category">Promosi Katalog</div>
+                                    </div>
+                                    <div class="portfolio-content">
+                                        <h3>Summer Collection</h3>
+                                        <p>Katalog musiman untuk brand fashion dengan konsep visual yang unik dan strategi promosi multi-channel.</p>
+                                        <div class="portfolio-tags">
+                                            <span>Print Design</span>
+                                            <span>Digital Catalog</span>
+                                            <span>Campaign</span>
+                                        </div>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Item 9 -->
-                    <div class="col-md-4 mb-4 portfolio-item" data-category="corporate">
-                        <div class="card h-100">
-                            <img src="images/header.jpg" alt="Tech Company" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title">TechVision Corp</h5>
-                                <p class="card-text">Website corporate untuk perusahaan teknologi dengan desain futuristik dan fitur interaktif.</p>
-                                <p><span class="badge bg-primary">Vue.js</span> <span class="badge bg-success">Dynamic</span> <span class="badge bg-info">Multilingual</span></p>
-                                <a href="#" class="btn btn-custom w-100">Lihat Detail</a>
+                            <!-- Project 9 -->
+                            <div class="col-md-4">
+                                <div class="portfolio-card">
+                                    <div class="portfolio-image">
+                                        <img src="images/header.jpg" alt="TechVision Corp" class="img-fluid">
+                                        <div class="portfolio-overlay">
+                                            <a href="#" class="btn-view-project">Lihat Project</a>
+                                        </div>
+                                        <div class="portfolio-category">Website</div>
+                                    </div>
+                                    <div class="portfolio-content">
+                                        <h3>TechVision Corp</h3>
+                                        <p>Website corporate untuk perusahaan teknologi dengan desain futuristik dan fitur interaktif.</p>
+                                        <div class="portfolio-tags">
+                                            <span>Vue.js</span>
+                                            <span>Dynamic</span>
+                                            <span>Multilingual</span>
+                                        </div>
+                                    </div>
                             </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Website Tab -->
+                    <div class="tab-pane fade" id="website" role="tabpanel">
+                        <div class="row g-4">
+                            <!-- Website Projects -->
+                            <!-- (Hanya tampilkan proyek website di sini) -->
+                        </div>
+                    </div>
+                    
+                    <!-- Content Tab -->
+                    <div class="tab-pane fade" id="content" role="tabpanel">
+                        <div class="row g-4">
+                            <!-- Content Strategy Projects -->
+                            <!-- (Hanya tampilkan proyek strategi konten di sini) -->
+                        </div>
+                    </div>
+                    
+                    <!-- Catalog Tab -->
+                    <div class="tab-pane fade" id="catalog" role="tabpanel">
+                        <div class="row g-4">
+                            <!-- Catalog Projects -->
+                            <!-- (Hanya tampilkan proyek promosi katalog di sini) -->
                         </div>
                     </div>
                 </div>
                 
                 <div class="text-center mt-5">
-                    <a href="index.html#contact" class="btn btn-lg btn-custom">Diskusikan Proyek Anda</a>
+                    <a href="index.html#contact" class="btn btn-lg btn-primary-custom with-icon">
+                        Diskusikan Proyek Anda <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- Services Overview Section -->
-        <section class="section" style="background-color: #240046; color: white;">
+        <!-- Services Overview Section Modern -->
+        <section class="services-section portfolio-services-section">
+            <div class="services-bg-shape"></div>
             <div class="container">
                 <div class="section-title text-center">
+                    <span class="section-badge">SERVICES</span>
                     <h2>Layanan Lengkap Kami</h2>
                     <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Solusi kreatif untuk kebutuhan bisnis Anda</p>
                 </div>
                 
-                <div class="row mt-5">
-                    <div class="col-md-4 mb-4">
-                        <div class="service-overview-card">
+                <div class="row g-4 mt-4">
+                    <div class="col-md-4">
+                        <div class="service-card">
                             <div class="service-icon">
                                 <i class="fas fa-laptop-code"></i>
                             </div>
                             <h3>Jasa Pembuatan Website</h3>
-                            <ul>
+                            <ul class="service-list">
                                 <li>Website Corporate & Company Profile</li>
                                 <li>E-Commerce & Online Shop</li>
                                 <li>Landing Page</li>
                                 <li>Website Portal & Informasi</li>
                                 <li>Portfolio & Personal Website</li>
                             </ul>
-                            <a href="index.html#services" class="btn btn-custom mt-3">Pelajari Lebih Lanjut</a>
+                            <a href="index.html#services" class="service-link">Pelajari Lebih Lanjut <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
-                    <div class="col-md-4 mb-4">
-                        <div class="service-overview-card">
+                    <div class="col-md-4">
+                        <div class="service-card">
                             <div class="service-icon">
                                 <i class="fas fa-bullhorn"></i>
                             </div>
                             <h3>Strategi Konten</h3>
-                            <ul>
+                            <ul class="service-list">
                                 <li>Perencanaan Konten Media Sosial</li>
                                 <li>Copywriting & Content Marketing</li>
                                 <li>SEO Content & Optimasi</li>
                                 <li>Analisis Audience & Engagement</li>
                                 <li>Content Calendar & Scheduling</li>
                             </ul>
-                            <a href="index.html#services" class="btn btn-custom mt-3">Pelajari Lebih Lanjut</a>
+                            <a href="index.html#services" class="service-link">Pelajari Lebih Lanjut <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
-                    <div class="col-md-4 mb-4">
-                        <div class="service-overview-card">
+                    <div class="col-md-4">
+                        <div class="service-card">
                             <div class="service-icon">
                                 <i class="fas fa-book-open"></i>
                             </div>
                             <h3>Promosi Produk Katalog</h3>
-                            <ul>
+                            <ul class="service-list">
                                 <li>Desain Katalog Produk Digital & Cetak</li>
                                 <li>Strategi Promosi Multi-channel</li>
                                 <li>Branding & Visual Identity</li>
                                 <li>Kampanye Pemasaran Produk</li>
                                 <li>Analisis Performa & Optimasi</li>
                             </ul>
-                            <a href="index.html#services" class="btn btn-custom mt-3">Pelajari Lebih Lanjut</a>
+                            <a href="index.html#services" class="service-link">Pelajari Lebih Lanjut <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Testimonial Section -->
-        <section class="section" style="background-color: #f8f9fa;">
+        <!-- Testimonial Section Modern -->
+        <section class="testimonial-section">
             <div class="container">
                 <div class="section-title text-center">
-                    <h2>Testimoni Klien</h2>
-                    <p class="section-subtitle">Apa kata klien tentang layanan kami</p>
+                    <span class="section-badge">TESTIMONIALS</span>
+                    <h2>Apa Kata Klien Kami</h2>
+                    <p class="section-subtitle">Pengalaman klien yang telah bekerjasama dengan VirallinKonten</p>
                 </div>
                 
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="testimonial-card">
+                <div class="row g-4 mt-4">
+                    <div class="col-md-4">
+                        <div class="testimonial-card-modern">
                             <div class="testimonial-rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -288,10 +425,13 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                             </div>
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
                             <p class="testimonial-text">"Website yang dibuat sangat profesional dan sesuai dengan kebutuhan perusahaan kami. Proses pengerjaan cepat dan komunikasi lancar."</p>
                             <div class="testimonial-author">
                                 <img src="images/header.jpg" alt="Budi Santoso" class="testimonial-avatar">
-                                <div>
+                                <div class="author-info">
                                     <h5>Budi Santoso</h5>
                                     <p>CEO PT Maju Bersama</p>
                                 </div>
@@ -299,8 +439,8 @@
                         </div>
                     </div>
                     
-                    <div class="col-md-4 mb-4">
-                        <div class="testimonial-card">
+                    <div class="col-md-4">
+                        <div class="testimonial-card-modern">
                             <div class="testimonial-rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -308,10 +448,13 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                             </div>
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
                             <p class="testimonial-text">"Strategi konten yang dikembangkan sangat efektif meningkatkan engagement audience kami. Tim VirallinKonten memahami target pasar kami dengan sangat baik."</p>
                             <div class="testimonial-author">
                                 <img src="images/header2.jpg" alt="Maya Putri" class="testimonial-avatar">
-                                <div>
+                                <div class="author-info">
                                     <h5>Maya Putri</h5>
                                     <p>Marketing Manager Fashion Bloom</p>
                                 </div>
@@ -319,8 +462,8 @@
                         </div>
                     </div>
                     
-                    <div class="col-md-4 mb-4">
-                        <div class="testimonial-card">
+                    <div class="col-md-4">
+                        <div class="testimonial-card-modern">
                             <div class="testimonial-rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -328,10 +471,13 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
                             </div>
+                            <div class="testimonial-quote">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
                             <p class="testimonial-text">"Desain katalog produk kami mendapat banyak pujian dari pelanggan dan berhasil meningkatkan penjualan secara signifikan. Sangat puas dengan hasilnya!"</p>
                             <div class="testimonial-author">
                                 <img src="images/header.jpg" alt="Anton Wijaya" class="testimonial-avatar">
-                                <div>
+                                <div class="author-info">
                                     <h5>Anton Wijaya</h5>
                                     <p>Owner HomeStyle Furniture</p>
                                 </div>
@@ -341,15 +487,34 @@
                 </div>
             </div>
         </section>
+        
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8 mb-4 mb-lg-0">
+                            <h2>Siap Untuk Mengembangkan Bisnis Anda?</h2>
+                            <p>Diskusikan kebutuhan proyek Anda dengan tim profesional kami sekarang.</p>
+                        </div>
+                        <div class="col-lg-4 text-lg-end">
+                            <a href="index.html#contact" class="btn btn-light-custom btn-lg">Hubungi Kami</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="footer">
+    <!-- Modern Footer -->
+    <footer class="footer-modern">
         <div class="container">
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="portfolio-websites.html">Portfolio</a>
-                <a href="index.html#services">Services</a>
-                <a href="index.html#contact">Contact</a>
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <div class="footer-brand">
+                            <h3>VirallinKonten</h3>
+                            <p>Digital Content Agency yang membantu bisnis Anda bersinar di era digital dengan strategi konten yang tepat dan efektif.</p>
             </div>
             <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -357,36 +522,73 @@
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
+                    </div>
+                    <div class="col-lg-2 col-6 mb-4 mb-lg-0">
+                        <h5>Halaman</h5>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="portfolio-websites.html">Portfolio</a></li>
+                            <li><a href="index.html#services">Services</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-6 mb-4 mb-lg-0">
+                        <h5>Layanan</h5>
+                        <ul class="footer-links">
+                            <li><a href="#">Jasa Website</a></li>
+                            <li><a href="#">Strategi Konten</a></li>
+                            <li><a href="#">Promosi Katalog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5>Kontak Kami</h5>
+                        <ul class="footer-contact">
+                            <li><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</li>
+                            <li><i class="fas fa-phone"></i> +62 838-3103-1417</li>
+                            <li><i class="fas fa-envelope"></i> info@virallinkonten.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
             <div class="copyright">
                 &copy; 2024 VirallinKonten. All Rights Reserved.
+                </div>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
-        // Filter Portfolio Items
         document.addEventListener('DOMContentLoaded', function() {
-            const filterButtons = document.querySelectorAll('.portfolio-filters button');
-            const portfolioItems = document.querySelectorAll('.portfolio-item');
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        
+        // Filter content in tabs
+        const allProjects = document.querySelectorAll('.portfolio-card');
+        const websiteTab = document.getElementById('website');
+        const contentTab = document.getElementById('content');
+        const catalogTab = document.getElementById('catalog');
+        
+        // Clone relevant projects to each tab
+        allProjects.forEach(project => {
+            const category = project.querySelector('.portfolio-category').textContent;
+            const projectClone = project.cloneNode(true);
             
-            filterButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    // Remove active class from all buttons
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    // Add active class to clicked button
-                    this.classList.add('active');
-                    
-                    const filterValue = this.getAttribute('data-filter');
-                    
-                    portfolioItems.forEach(item => {
-                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-                            item.style.display = 'block';
-                        } else {
-                            item.style.display = 'none';
-                        }
-                    });
-                });
+            if (category === 'Website') {
+                websiteTab.querySelector('.row').appendChild(projectClone);
+            } else if (category === 'Strategi Konten') {
+                contentTab.querySelector('.row').appendChild(projectClone);
+            } else if (category === 'Promosi Katalog') {
+                catalogTab.querySelector('.row').appendChild(projectClone);
+            }
             });
         });
     </script>
