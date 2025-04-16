@@ -157,3 +157,43 @@ function animateCounter(element, start, end, duration) {
 
     window.requestAnimationFrame(step);
 } 
+
+    function animateCount(element, start, end, duration) {
+        let startTime = null;
+        const step = (timestamp) => {
+            if (!startTime) startTime = timestamp;
+            const progress = Math.min((timestamp - startTime) / duration, 1);
+            const currentCount = Math.floor(progress * (end - start) + start);
+            element.textContent = currentCount + (element.id === 'clients-count' ? '+' : element.id === 'satisfaction-rate' ? '%' : '');
+            if (progress < 1) {
+                requestAnimationFrame(step);
+            }
+        };
+        requestAnimationFrame(step);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        animateCount(document.getElementById('clients-count'), 1, 150, 2000); // 150+
+        animateCount(document.getElementById('satisfaction-rate'), 1, 98, 2000); // 98%
+        animateCount(document.getElementById('experience-years'), 1, 5, 2000); // 25+
+    });
+
+    function animateCount(element, start, end, duration) {
+        let startTime = null;
+        const step = (timestamp) => {
+            if (!startTime) startTime = timestamp;
+            const progress = Math.min((timestamp - startTime) / duration, 1);
+            const currentCount = Math.floor(progress * (end - start) + start);
+            element.textContent = currentCount + (element.id === 'active-clients' ? '+' : element.id === 'satisfaction-rate' ? '%' : '');
+            if (progress < 1) {
+                requestAnimationFrame(step);
+            }
+        };
+        requestAnimationFrame(step);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        animateCount(document.getElementById('active-clients'), 0, 150, 2000); // 150+
+        animateCount(document.getElementById('satisfaction-rating'), 0, 98, 2000); // 98%
+        animateCount(document.getElementById('experience-tahun'), 0, 5, 2000); // 25+
+    });

@@ -2169,17 +2169,6 @@ aside.section .form-control {
     position: relative;
 }
 
-#contact .section-title h2:after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(90deg, #ff6b6b, #c44bff, #6b6bff);
-    border-radius: 2px;
-}
 
 #contact form {
     background: rgba(255, 255, 255, 0.03);
@@ -2223,9 +2212,7 @@ aside.section .form-control {
 }
 
 #contact .btn-custom {
-    background: linear-gradient(90deg, #ff6b6b, #c44bff, #6b6bff);
-    background-size: 200% 200%;
-    animation: gradient-shift 5s ease infinite;
+    background-color: #5a4d9f;
     border: none;
     padding: 15px 30px;
     font-size: 1.1rem;
@@ -2233,12 +2220,11 @@ aside.section .form-control {
     letter-spacing: 1px;
     text-transform: uppercase;
     border-radius: 10px;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 #contact .btn-custom:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #5a189a;
 }
 
 /* Responsive Styles for Contact Section */
