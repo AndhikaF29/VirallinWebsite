@@ -803,7 +803,7 @@ aside.section .form-control {
 .services-bg-shape {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB4PSIwIiB5PSIwIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSgxMCkiPjxjaXJjbGUgY3g9IjIiIGN5PSIyIiByPSIxIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjA1Ii8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3BhdHRlcm4pIi8+PC9zdmc+');
@@ -2150,6 +2150,152 @@ aside.section .form-control {
     .hero-description-modern:before,
     .hero-description-modern:after {
         display: none;
+    }
+}
+
+/* Contact Section Modern */
+#contact {
+    background: linear-gradient(135deg, #1a0b2e, #322f65, #5a4d9f);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#contact .section-title h2 {
+    color: #ffffff;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#contact .section-title h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff6b6b, #c44bff, #6b6bff);
+    border-radius: 2px;
+}
+
+#contact form {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+#contact form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+#contact .form-control {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px 20px;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#contact .form-control:focus {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+#contact .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#contact textarea.form-control {
+    min-height: 150px;
+    resize: vertical;
+}
+
+#contact .btn-custom {
+    background: linear-gradient(90deg, #ff6b6b, #c44bff, #6b6bff);
+    background-size: 200% 200%;
+    animation: gradient-shift 5s ease infinite;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#contact .btn-custom:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles for Contact Section */
+@media (max-width: 991px) {
+    #contact {
+        padding: 80px 0;
+    }
+    
+    #contact .section-title h2 {
+        font-size: 2.4rem;
+    }
+    
+    #contact form {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    #contact {
+        padding: 60px 0;
+    }
+    
+    #contact .section-title h2 {
+        font-size: 2rem;
+    }
+    
+    #contact form {
+        padding: 25px;
+    }
+    
+    #contact .form-control {
+        padding: 12px 15px;
+    }
+    
+    #contact .btn-custom {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #contact .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    #contact form {
+        padding: 20px;
+    }
+    
+    #contact .form-control {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+    
+    #contact .btn-custom {
+        padding: 10px 20px;
+        font-size: 0.95rem;
     }
 }
 
